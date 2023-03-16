@@ -1,0 +1,394 @@
+/*Styles for my game*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Shippori+Antique+B1&display=swap');
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAFAF1;
+    width: 98%;
+}
+
+
+/*components*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid;
+    height: 67px;
+    text-decoration: none;
+    text-align: center;
+    width: 31%;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #8BBF5A;
+    color: #557636;
+}
+
+.btn-primary:hover {
+    background-color: #557636;
+    border: 1px solid #8BBF5A;
+    color: #8BBF5A;
+}
+
+.btn-secondary {
+    background-color: #d8e8e3;
+    border: 1px solid #557636;
+    color: #557636;
+}
+
+.btn-secondary:hover {
+    background-color: #8BBF5A;
+    color: #d8e8e3;
+}
+
+
+/*Header document*/
+
+header {
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/*Page 1: Main menu*/
+
+.page_1 {
+    margin-top: 10%;
+}
+
+.page_1 .group-btn div {
+    margin: 20px;
+}
+
+.page_1 .btn {
+    width: 317px;
+}
+
+.page_1 .btn-primary {
+    height: 95px;
+}
+
+
+/*Page 2: Menu add Word*/
+
+.page_2 {
+    margin: 0 25% 0 25%;
+}
+
+.page_2 .btn {
+    width: 49%;
+}
+
+.page_2 .input {
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background-color: #EAFAF1;
+    margin-top: 20px;
+    height: 344px;
+    width: 100%;
+    resize: none;
+}
+
+.page_2 .input::placeholder {
+    color: #8BBF5A;
+}
+
+.page_2 .warnign {
+    text-align: left;
+    font-size: 13px;
+    margin: 0 0 20px 0;
+    color: #D68910;
+}
+
+
+/* Page 3: game*/
+
+.page_3 canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid #8BBF5A;
+}
+
+.page_3 .displayUser {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.page_3 .correctWord {
+    margin: 30px;
+    height: 30px;
+    list-style: none;
+}
+
+.page_3 .correctWord li {
+    float: left;
+    width: 80px;
+    height: 60px;
+    font-size: 48px;
+    color: #8BBF5A;
+    margin: 0 30px 0 30px;
+    border-bottom: solid 4px #8BBF5A;
+}
+
+#wrongWord {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #8BBF5A;
+    height: 30px;
+}
+
+.page_3 .btn {
+    width: 30%;
+    margin: 10px;
+}
+
+
+/* popup */
+
+.background-popup {
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*---fixed------*/
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.content-popup {
+    text-align: center
+}
+
+#closePopup {
+    color: #000000;
+    font-weight: bold;
+    transition: all 200ms;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #8BBF5A;
+    border-radius: 7px;
+}
+
+#closePopup:hover {
+    color: #EAFAF1;
+    background-color: #557438;
+}
+
+
+/*---fixed------*/
+
+/*Touch Keyboard*/
+
+.keyboard {
+    background: transparent;
+    color: #E5E5E5;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.btn-keyboard {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: #8BBF5A;
+    display: none;
+}
+
+.btn-keyboard svg {
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+}
+
+.btn-keyboard:hover {
+    color: #557636;
+}
+
+
+/*Footer document*/
+
+footer {
+    margin-top: 10%;
+}
+
+footer .about {
+    padding: 30px;
+}
+
+footer .about a {
+    text-decoration: none;
+    color: #8BBF5A;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer .about a:hover {
+    color: #557636;
+}
+
+
+/*Responsive Desing*/
+
+
+/*Tablet or Ipad*/
+
+@media(max-width:900px) {
+    /*fixed*/
+    .popup {
+        width: 70%;
+        font-size: 20px;
+    }
+    /*Page 1: Main Page*/
+    .page_1 {
+        margin-top: 30%;
+    }
+    .page_1 .btn-primary {
+        height: 100px;
+    }
+    /*Page 2: Register Word*/
+    .page_2 {
+        margin: 0% 3% 0% 3%;
+    }
+    header {
+        margin-top: 8%;
+    }
+    .page_2 .input {
+        margin-top: 10%;
+        height: 234px;
+    }
+    .page_2 .group-btn {
+        margin-top: 60%;
+    }
+    /*Page 3: Game*/
+    .page_3 {
+        margin-top: 50px;
+    }
+    .page_3 .displayUser {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    #closePopup {
+        font-size: calc(1rem - 1vw);
+    }
+    .keyboard {
+        display: block;
+    }
+    .btn-keyboard {
+        display: block;
+    }
+}
+
+
+/*Iphone or Android*/
+
+@media(max-width:500px) {
+    /*fixed*/
+    .popup {
+        width: 90%;
+        padding: 7px;
+    }
+    /*Page 1: Main Page*/
+    .page_1 {
+        margin-top: 30%;
+    }
+    .page_1 .btn {
+        width: 95%;
+    }
+    /*Page 2: Register Word*/
+    header {
+        margin-top: 10%;
+    }
+    .page_2 {
+        width: 90%;
+        margin: 0 7% 0 7%;
+    }
+    .page_2 .input {
+        margin-top: 10%;
+        height: 244px;
+    }
+    .page_2 .group-btn {
+        margin-top: 10%;
+    }
+    .page_2 .btn {
+        width: 90%;
+        margin-top: 5px;
+    }
+    /*Page 3: Game*/
+    .page_3 {
+        margin-top: 0%;
+    }
+    .page_3 .displayUser {
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+    .page_3 .correctWord {
+        display: flex;
+        justify-content: center;
+    }
+    .page_3 .correctWord li {
+        width: 50vw;
+        margin-inline-start: auto;
+        font-size: 45px;
+    }
+    .page_3 .wrongWord {
+        margin: 7% 0 0 0;
+    }
+    .page_3 .btn {
+        width: 90%;
+    }
+    .page_3 .group-btn {
+        display: block !important;
+    }
+    /*Footer Movile*/
+    footer .about {
+        padding: 20px;
+        margin-top: 7%;
+    }
+    footer .about a {
+        margin: 3px;
+    }
+}
+
+
+/*
+    Alura Challenge - Oracle Next Education
+    Dev Daniel Quintero Henriquez - Colombia
+    Juego Ahorcado
+*/
