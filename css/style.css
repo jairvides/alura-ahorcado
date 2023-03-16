@@ -106,6 +106,7 @@ header {
     height: 344px;
     width: 100%;
     resize: none;
+    color: #0A3871;
 }
 
 .page_2 .input::placeholder {
