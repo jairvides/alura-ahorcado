@@ -1,8 +1,8 @@
 /*VARIABLES GLOBALES*/
 var word = ""; //Palabra Aleatoria
-var words = ["hotel", "alura", "html", "css"];
+var words = ["oracle", "alura", "html", "css", "javascript", "svg", "one", "next", "education"];
 var attempts = [0, 0]; //Intentos [Correctos,Incorrectos]
-var gameState = false; // Estado del Juego false => Terminado;  True => Emepezar
+var gameState = false; // Estado del Juego false => Terminado;  True => Empezar
 var touchDevice = false;
 var display = window.innerWidth;
 
@@ -11,7 +11,7 @@ if (display < 900) {
 }
 /*01: CONTROL PARA DISPOSITIVOS TACTILES | CONTROL FOR TOUCH DEVICES*/
 var controlTouch = document.querySelector("#keyboard");
-controlTouch.addEventListener("input", function(event) {
+controlTouch.addEventListener("input", function (event) {
     if (touchDevice == true) {
         if (gameState != false) {
             var key = event['data'];

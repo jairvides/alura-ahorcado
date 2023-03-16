@@ -1,6 +1,7 @@
 /*Styles for my game*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Shippori+Antique+B1&display=swap');
+
 * {
     font-family: 'Inter';
     font-style: normal;
@@ -36,25 +37,25 @@ body {
 }
 
 .btn-primary {
-    background-color: #8BBF5A;
-    color: #557636;
+    background-color: #0A3871;
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
-    background-color: #557636;
-    border: 1px solid #8BBF5A;
-    color: #8BBF5A;
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    color: #0A3871;
 }
 
 .btn-secondary {
-    background-color: #d8e8e3;
-    border: 1px solid #557636;
-    color: #557636;
+    background-color: #EAFAF1;
+    border: 1px solid #0A3871;
+    color: #0A3871;
 }
 
 .btn-secondary:hover {
-    background-color: #8BBF5A;
-    color: #d8e8e3;
+    background-color: #0A3871;
+    color: #FFFFFF;
 }
 
 
@@ -108,7 +109,7 @@ header {
 }
 
 .page_2 .input::placeholder {
-    color: #8BBF5A;
+    color: #0A3871;
 }
 
 .page_2 .warnign {
@@ -125,7 +126,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 4px solid #8BBF5A;
+    border-bottom: 4px solid #0A3871;
 }
 
 .page_3 .displayUser {
@@ -144,16 +145,16 @@ header {
     width: 80px;
     height: 60px;
     font-size: 48px;
-    color: #8BBF5A;
+    color: #0A3871;
     margin: 0 30px 0 30px;
-    border-bottom: solid 4px #8BBF5A;
+    border-bottom: solid 4px #0A3871;
 }
 
 #wrongWord {
     text-align: center;
     font-weight: 400px;
     font-size: 24px;
-    color: #8BBF5A;
+    color: #495057;
     height: 30px;
 }
 
@@ -200,13 +201,13 @@ header {
     border: none;
     outline: none;
     padding: 10px;
-    background-color: #8BBF5A;
+    background-color: #0A3871;
     border-radius: 7px;
 }
 
 #closePopup:hover {
     color: #EAFAF1;
-    background-color: #557438;
+    background-color: #0A3871;
 }
 
 
@@ -226,7 +227,7 @@ header {
     float: right;
     border: none;
     background-color: transparent;
-    color: #8BBF5A;
+    color: #0A3871;
     display: none;
 }
 
@@ -238,7 +239,7 @@ header {
 }
 
 .btn-keyboard:hover {
-    color: #557636;
+    color: #0A3871;
 }
 
 
@@ -254,13 +255,13 @@ footer .about {
 
 footer .about a {
     text-decoration: none;
-    color: #8BBF5A;
+    color: #364252;
     margin: 10px;
     cursor: pointer;
 }
 
 footer .about a:hover {
-    color: #557636;
+    color: #0A3871;
 }
 
 
@@ -270,46 +271,58 @@ footer .about a:hover {
 /*Tablet or Ipad*/
 
 @media(max-width:900px) {
+
     /*fixed*/
     .popup {
         width: 70%;
         font-size: 20px;
     }
+
     /*Page 1: Main Page*/
     .page_1 {
         margin-top: 30%;
     }
+
     .page_1 .btn-primary {
         height: 100px;
     }
+
     /*Page 2: Register Word*/
     .page_2 {
         margin: 0% 3% 0% 3%;
     }
+
     header {
         margin-top: 8%;
     }
+
     .page_2 .input {
         margin-top: 10%;
         height: 234px;
     }
+
     .page_2 .group-btn {
         margin-top: 60%;
     }
+
     /*Page 3: Game*/
     .page_3 {
         margin-top: 50px;
     }
+
     .page_3 .displayUser {
         margin-top: 10%;
         margin-bottom: 20%;
     }
+
     #closePopup {
         font-size: calc(1rem - 1vw);
     }
+
     .keyboard {
         display: block;
     }
+
     .btn-keyboard {
         display: block;
     }
@@ -319,68 +332,85 @@ footer .about a:hover {
 /*Iphone or Android*/
 
 @media(max-width:500px) {
+
     /*fixed*/
     .popup {
         width: 90%;
         padding: 7px;
     }
+
     /*Page 1: Main Page*/
     .page_1 {
         margin-top: 30%;
     }
+
     .page_1 .btn {
         width: 95%;
     }
+
     /*Page 2: Register Word*/
     header {
         margin-top: 10%;
     }
+
     .page_2 {
         width: 90%;
         margin: 0 7% 0 7%;
     }
+
     .page_2 .input {
         margin-top: 10%;
         height: 244px;
     }
+
     .page_2 .group-btn {
         margin-top: 10%;
     }
+
     .page_2 .btn {
         width: 90%;
         margin-top: 5px;
     }
+
     /*Page 3: Game*/
     .page_3 {
         margin-top: 0%;
     }
+
     .page_3 .displayUser {
         margin-top: 7%;
         margin-bottom: 10%;
     }
+
     .page_3 .correctWord {
         display: flex;
         justify-content: center;
     }
+
     .page_3 .correctWord li {
         width: 50vw;
         margin-inline-start: auto;
         font-size: 45px;
     }
+
     .page_3 .wrongWord {
         margin: 7% 0 0 0;
     }
+
     .page_3 .btn {
         width: 90%;
     }
+
     .page_3 .group-btn {
         display: block !important;
     }
+
     /*Footer Movile*/
     footer .about {
         padding: 20px;
         margin-top: 7%;
     }
+
     footer .about a {
         margin: 3px;
     }
@@ -389,6 +419,6 @@ footer .about a:hover {
 
 /*
     Alura Challenge - Oracle Next Education
-    Dev Daniel Quintero Henriquez - Colombia
+    Jair Vides - Colombia
     Juego Ahorcado
 */

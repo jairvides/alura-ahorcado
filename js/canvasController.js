@@ -1,7 +1,7 @@
 /*Canvas Properties*/
 var canva = document.querySelector("canvas");
 var ctx = canva.getContext("2d");
-var drawColor = "#557636";
+var drawColor = "#0A3871";
 var backgroundColor = "#EAFAF1";
 var stroke = 4;
 
